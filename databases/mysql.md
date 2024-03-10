@@ -28,3 +28,13 @@ BEGIN
 	RETURN this_name;
 END
 ```
+
+2. delete function : 
+```sql
+DROP FUNCTION tools.getNamaRuanganById
+```
+
+3. Call Function : 
+```sql
+select tools.getNamaRuanganById(1);
+```
