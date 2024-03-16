@@ -100,4 +100,12 @@ referensinya dari :
  - [Ruby on Rails #94 Rails 7 Select Box with Search using Slim-Select
 ](https://slimselectjs.com)
 
+### 7.Model
 
+#### Validasi unik
+berikut contoh validasi unik dengan scope
+```ruby
+  validates_uniqueness_of :member_id, scope: :folder_id, on: :create, message: 'must be unique'
+```
+
+referensi lengkapnya bisa dilihat pada [documentation active record validation](https://guides.rubyonrails.org/active_record_validations.html).
