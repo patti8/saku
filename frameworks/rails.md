@@ -54,3 +54,50 @@ cara penggunaan action dengan meletakan atribut ```data-action="namacontroller#n
 ### 3. Best Rails Gem for Vscode Extension
 - ```gem install htmlbeautifier ``` for erb linter, and for extension VSCODE you must to install **ERB Formatter/Beautify** 
 - ```gem 'rubocop', require: false``` for ruby linter, and for extension VSCODE you must to install **rubocop**
+
+### 4. FORM HELPER
+untuk implementasi tag form HTML di [Ruby on Rails](https://guides.rubyonrails.org/getting_started.html), contohnya seperti : 
+```ruby
+<%= form_for @person do |f| %>
+  <%= f.label :first_name %>:
+  <%= f.text_field :first_name %><br />
+
+  <%= f.label :last_name %>:
+  <%= f.text_field :last_name %><br />
+
+  <%= f.submit %>
+<% end %>
+```
+
+yang akan menjadi seperti ini kalau di HTML : 
+```html 
+<form action="/people" class="new_person" id="new_person" method="post">
+  <input name="authenticity_token" type="hidden" value="NrOp5bsjoLRuK8IW5+dQEYjKGUJDe7TQoZVvq95Wteg=" />
+  <label for="person_first_name">First name</label>:
+  <input id="person_first_name" name="person[first_name]" type="text" /><br />
+
+  <label for="person_last_name">Last name</label>:
+  <input id="person_last_name" name="person[last_name]" type="text" /><br />
+
+  <input name="commit" type="submit" value="Create Person" />
+</form>
+```
+referensi lanjutannya pada link [ActionView::Helpers::FormHelper](https://api.rubyonrails.org/v5.1/classes/ActionView/Helpers/FormHelper.html).
+
+
+### 5. Render Partial
+**render partial** merupakan metode untuk merender sub template. untuk lebih lanjutnya bisa ke [link ini](https://api.rubyonrails.org/classes/ActionView/PartialRenderer.html)
+
+- contohnya kita merender template ```_account.html.erb``` yang berada dengan file utama, misalnya template tersebut akan dirender pada file ```index.html.erb``` yang diletakan path path ``accounts/index.html.erb
+
+```erb
+<%= render 'account' %>
+```
+
+### 6. Stimulus & Slim Select 2.0
+referensinya dari :
+ - [slimselectjs.com](https://slimselectjs.com) 
+ - [Ruby on Rails #94 Rails 7 Select Box with Search using Slim-Select
+](https://slimselectjs.com)
+
+
