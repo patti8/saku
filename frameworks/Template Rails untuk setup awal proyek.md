@@ -1,5 +1,7 @@
 // template.rb
-can be use rails new my_app -m template.rb or use github link
+```ruby
+# template.rb
+# can be use rails new my_app -m template.rb or use github link
 
 
 say "Mengatur Database: PostgreSQL"
@@ -55,3 +57,4 @@ services:
 YAML
 
 say "Setup awal selesai! Jalankan `rails db:create db:migrate` untuk mulai."
+```

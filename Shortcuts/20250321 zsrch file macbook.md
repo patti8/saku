@@ -1,3 +1,4 @@
+```bash
 #alias dokku='ssh dokku@dokku.docker'
 
 #alias liserve='root@62.72.51.3'
@@ -89,3 +90,4 @@ eval "$(~/.local/bin/mise activate)"
 # kill port
 
 killport() { kill -9 $(lsof -ti :$1); }
+```
