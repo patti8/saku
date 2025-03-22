@@ -29,7 +29,7 @@ alias svconf="source ~/.zshrc && echo 'configuration saved.✌️'"
 
 ZSH_THEME="powerlevel9k/powerlevel9k"
 
-  
+
 
 export PATH="/Users/imac/my_gems/bin:$PATH"
 

@@ -1,0 +1,1 @@
+ssh-keygen -R "[localhost]:2222" -> masalah key ssh berganti
